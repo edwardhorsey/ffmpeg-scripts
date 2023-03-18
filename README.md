@@ -1,17 +1,19 @@
 # ffmpeg-scripts
 
-## MOV to MP4 (automatic settings)
-```
+A dump for FFMPEG commands I use on a day-to-day basis.
+
+### MOV to MP4 (automatic settings)
+```bash
 ffmpeg -i input.mov output.mp4
 ```
 
 
-## Fixed time length (9 seconds)
-```
+### Fixed length (9 seconds)
+```bash
 ffmpeg -i input.mov -ss 00:00:0.0 -t 9 output.mp4
 ```
 
-## MOV to GIF
+### MOV to GIF
 ```bash
 ffmpeg \
     -i input.mov \
@@ -20,7 +22,7 @@ ffmpeg \
     out.gif
 ```
 
-## Compress MP4
+### Compress MP4
 ```bash
 # -an to remove audio, higher -crf equals more compression
 
