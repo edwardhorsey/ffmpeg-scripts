@@ -1,6 +1,6 @@
 # ffmpeg-scripts
 
-A dump for FFMPEG commands I use on a day-to-day basis.
+A dump for FFMPEG commands I use day-to-day.
 
 ### MOV to MP4 (automatic settings)
 ```bash
