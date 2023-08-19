@@ -37,6 +37,8 @@ ffmpeg \
 
 ### Compress folder of images
 ```bash
+# higher -q:v equals more compression
+
 mkdir processed
 for f in *.jpg *.png *.jpeg
     do
