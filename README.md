@@ -34,3 +34,12 @@ ffmpeg \
     -movflags faststart \
     output.mp4
 ```
+
+### Compress folder of images
+```bash
+mkdir processed
+for f in *.jpg *.png *.jpeg
+    do
+        ffmpeg -i $f -q:v 10 processed/$f -y
+done
+```
