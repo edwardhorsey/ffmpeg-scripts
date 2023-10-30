@@ -5,6 +5,9 @@ A dump for FFMPEG commands I use day-to-day.
 ### MOV to MP4 (automatic settings)
 ```bash
 ffmpeg -i input.mov output.mp4
+
+# scale to 800px width & automatic height
+ffmpeg -i input.mov -vf scale=800:-1  output-800.mp4
 ```
 
 
