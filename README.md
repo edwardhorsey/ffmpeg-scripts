@@ -46,5 +46,11 @@ mkdir processed
 for f in *.jpg *.png *.jpeg
     do
         ffmpeg -i $f -q:v 10 processed/$f -y
-done
+    done
+
+# webp
+for f in *.png
+    do
+        cwebp -q 90 $f -o "${f%.png}.webp"
+    done
 ```
