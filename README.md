@@ -1,7 +1,8 @@
-# ffmpeg-scripts
+# FFMPEG scripts
 
-A dump for FFMPEG commands I use day-to-day.
+A growing collection of commands that I use day-to-day.
 
+## Video
 ### MOV to MP4 (automatic settings)
 ```bash
 ffmpeg -i input.mov output.mp4
@@ -37,7 +38,7 @@ ffmpeg \
     -movflags faststart \
     output.mp4
 ```
-
+## Images
 ### Compress folder of images
 ```bash
 # higher -q:v equals more compression
@@ -53,4 +54,11 @@ for f in *.png
     do
         cwebp -q 90 $f -o "${f%.png}.webp"
     done
+```
+## Audio
+### Compress wav to mp3
+```bash
+i=FILENAME.wav
+
+ffmpeg -i "$i" -ab 320k "${i%.*}.mp3"
 ```
