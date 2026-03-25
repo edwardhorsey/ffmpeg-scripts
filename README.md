@@ -1,4 +1,4 @@
-# FFMPEG scripts
+# Misc scripts
 
 A growing collection of commands that I use day-to-day.
 
@@ -62,3 +62,10 @@ i=FILENAME.wav
 
 ffmpeg -i "$i" -ab 320k "${i%.*}.mp3"
 ```
+### Beets - list recently added items
+```bash
+beet ls -f '$added - $mtime - $artist - $year - $album - $track - $title' | sort -r | head -n 50
+
+beet ls -f '$added - $path ' | sort -r | head -n 300 | less
+```
+
